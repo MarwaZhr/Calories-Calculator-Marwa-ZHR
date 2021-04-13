@@ -1,0 +1,27 @@
+
+li a:hover { background-color : #111; }
+/*.paragImage::before{
+	content: attr(data-text);
+	position : absolute;
+	top : 0;
+	left: 0;
+	width: 100%;
+	color : #2980b9;
+	border-right: 2px solid #2980b9;
+	animation : type 6s steps(22) infinite;
+} 
+
+@keyframes animate 
+{
+	0%,10%,100%
+	{
+		width : 0;
+	}
+	50%
+	{
+		width:100%;
+	}
+	100%{
+
+	}
+}*/

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel='shortout icon' type="image/x-icon" href="logo1.ico"/>
+	<link rel="stylesheet" href="caloriesyes.css"/>
+	<title> Colories </title>
+    
+</head>
+<body>
+	<div class="header">
+		<div class = "logo">
+			<img id ="logoCalories"src="Calories.png" alt="Calories log">
+			<span id ="logoname">My<strong>Calories</strong></span>
+			<span id ="phrase"> Your calories calculator</span>
+			
+		</div>
+	</div> 
+	<main id="homePage">
+	<div>
+	<ul>
+	<li><a  href="Caloriesh.html">Home</a></li>
+	<li><a  href="CaloriesCalculator.html">Calories</a></li>	
+	<li><a  href="BMIpage.html">BMI</a></li>	
+	</ul>	
+	</div>
+	<!-- <div>
+	<a href="logIn1.htm">
+		<button class="btn"id='#log'> <span>LOG IN </span> </button>
+	</a>
+	<a href="signIn.html"> 
+	   <button class="btn"> <span>SIGN IN </span id="btnspan"> </button>
+	</a>
+	</div> -->
+	<div class="imgparg">
+	<h1 class="paragImage">Welcome to MyCalories !</h1>
+	</div>
+	<div class="slider"> 
+			<div class="slide">
+				<img class ="im"src="image3.jpg" alt="image">
+			</div>
+	</div>
+	</main>
+<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+<script>
+	$('.header').css({'padding':'15px','test-align':'right','color':'white','fontSize':'30px','border-radius':"15px","margin-left":"65px"})
+	$("#logoCalories").css({'width':'80px','border-radius':'10px'})
+	$('#logoname').css({"font-size": "40px","top":"-42px","color":"#383838"})
+	$('#phrase').css({'color':'#484848', 'font-family':'Courier New',"position":"relative","left":"600px","top":"-22px"})
+	$('.btn').css({"display":"inline-block","border":"none","cursor":"pointer","position":"relative","left":"1260px","top":"-43px","width":"90","padding":"10px","font-family":"Arial","background-color":" #2c3e50 ","color":"white","border-radius":"3px"})
+	$("#homeImg").css({"width":"1300px", "opacity":"0.3", "margin-left":"101px"})
+	$("ul").css({'list-style-type':"none","margin":"0","padding":"0", "background-color":"#333", 'height':"50px"})
+	$("li").css({"float":"left"})
+	$("li a").css({"color":"white", "display":"block","text-align":"center", "padding":"14px 16px", "text-decoration":"none"})
+	$('#logoname').css({"font-size": "40px","top":"-22px","color":"#383838"})
+	$('.paragImage').css({"position":"absolute","top":"10%","text-align":"center","width":"100%","font-size":"50px","font-family":"Arial"})
+	$('.imgparg').css({"position":"relative","margin":"0 auto","color":"black"})
+	$(".im").css({"width":"800px" ,"padding":"76px","margin-left":"300px"})
+</script>
+<script type="text/javascript" src= "Calories.js"></script>
+</body>
+<footer></footer>
+</html>
+

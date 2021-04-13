@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel='shortout icon' type="image/x-icon" href="logo1.ico"/>
+	<link rel="stylesheet" href="caloriesyes.css"/>
+	<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+	<title>Calories Calculator</title>
+</head>
+<body>
+<nav class="navD" >
+<div class="header">
+	<img id ="logoCalories"src="Calories.png" alt="Calories log">
+	<span id ="logoname">My<strong>Calories</strong></span>
+	</div>
+</div>
+<div >
+	<ul>
+	<li><a  href="Caloriesh.html">Home</a></li>
+	<li><a  href="CaloriesCalculator.html">Calories</a></li>	
+	<li><a  href="BMIpage.html">BMI</a></li>	
+
+	</ul>	
+	</div>
+</nav>
+<main> 
+<div id="box">
+<h2 id="title1"> Your calories need per day</h2>	
+<p style="font-size : 17px; font-family : 'sans serif';"  > Please fill in all information below <p>
+<div id="gender" style="padding : 10px">
+<p class="pStyle">Your Gender</p>
+<input  type="text" placeholder="Put your gender" id="yourGender" class="designBtn"  onchange="getValue()" required>
+</div>
+<div>
+<p id="yourage">Your Age</p>
+<input type="number" placeholder="Put your age" id="age" class="designBtn"required onchange="getValue()">
+</div>
+<div>
+<p class="pStyle">Your Weight</p>
+<input type="number" placeholder="kg" id="Weight" class="designBtn"required onchange="getValue()">
+</div>
+<div>
+<p class="pStyle">Your Height</p>
+<input type="number" placeholder="cm" id="height" class="designBtn"required onchange="getValue()">
+</div>
+<div id="divDaily">
+<label id="daily" >You Daily Activity</label>
+<div id="ac">
+<select id= "activ" onclick="myActivity('activ')">
+<option  value=""></option>	
+<option  value="Very Light"> Very Light</option>
+<option  value="Light" > Light</option>
+<option  value="Moderate"> Moderate</option>
+<option  value="Heavy"> Heavy</option>
+<option  value="Very Heavy">Very Heavy</option>
+</select>
+</div>
+</div>
+<div id="result">
+<p id="calResult" style="font-size : 17px; font-family : 'sans serif';"></p>
+<button id="idealCalories" onclick="idealCalories()" > <b>Calculate Calories Need</b></button>
+</div>
+</div>
+</main>
+
+<script>
+	//For css
+	$('.header').css({'padding':'15px','test-align':'right','color':'white','fontSize':'30px','border-radius':"15px","margin-left":"65px"})
+	$("#logoCalories").css({'width':'80px','border-radius':'10px'})
+	$('#logoname').css({"font-size": "40px","top":"-22px","color":"#383838"})
+	$('.navD').css({"color":"white","box-shadow":"0 2px 4px 0 rgba(0,0,0,0.1)"})
+	$('main').css({'text-align':'center',"font-family":"Helvetica","background-image":"linear-gradient(#fc5c65,#fd9644)","padding":"80px","opacity":"0.92"})
+	$("#box").css({'background-color':'#ffffff', "width":"600px","margin-left":"330px","border-radius":"7px","box-shadow":"2px 2px 2px #ee5253", "height":"630px", "padding": "20px"})
+	$("#title1").css({"font-family":"sans serif","font-size":"30px"})
+	$(".pStyle").css({"font-family":"sans serif", "font-size":"17px","margin-right":"100px"})
+	$('#result').css({"margin":"-50px 0"})
+	$("#ac").css({"margin":"30px"})
+	$('#yourage').css({"font-family":"sans serif", "font-size":"17px","margin-right":"119px"})
+	$('#daily').css({"font-family":"sans serif", "font-size":"17px","margin-right":"52px"})
+	$("#divDaily").css({"padding":"20px"})
+	$(".designBtn").css({"border":"none", "border-bottom" :"1px solid #00cec9", "width": "180px","outline":"none"})
+	$("#activ").css({"width":"189px", "border":"none","border-bottom" :"1px solid #00cec9"})
+	$("#idealCalories").css({"border":"none", "background-color" :"#00cec9", "color":"white", "font-family":"sans serif", "width":"200px","height" : "50px", "border-radius" :"20px" })
+	$("ul").css({'list-style-type':"none","margin":"0","padding":"0", "background-color":"#333", 'height':"50px"})
+	$("li").css({"float":"left"})
+	$("li a").css({"color":"white", "display":"block","text-align":"center", "padding":"14px 16px", "text-decoration":"none"})
+
+
+
+</script>
+<script>
+
+
+</script>
+<script type="text/javascript" src= "Calories.js"></script>
+</body>
+<footer ></footer>
+</html>

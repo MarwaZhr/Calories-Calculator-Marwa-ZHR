@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel='shortout icon' type="image/x-icon" href="logo1.ico"/>
+	<link rel="stylesheet" href="caloriesyes.css"/>
+	<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+	<title> Calculate Your BMI</title>
+</head>
+<body>
+<nav class="navD" >
+<div class="header">
+	<img id ="logoCalories"src="Calories.png" alt="Calories log">
+	<span id ="logoname">My<strong>Calories</strong></span>
+	
+</div>
+<div >
+	<ul>
+	<li><a  href="Caloriesh.html">Home</a></li>
+	<li><a  href="CaloriesCalculator.html">Calories</a></li>	
+	<li><a  href="BMIpage.html">BMI</a></li>	
+	</ul>	
+</div>
+</nav>
+<main>
+<div id="formula">
+<h2 id="title">Adult BMI Calculator</h2>	
+<div style="padding : 10px;">
+<p class="info">Your Weight</p>
+<input type="number" placeholder="kg" id="Weight1" class="desiBtn"required onchange="getValue1()">
+</div>
+<div>
+<p class="info">Your Height</p>
+<input type="number" placeholder="cm" id="height1" class="desiBtn"required onchange="getValue1()">
+</div> 
+<div id="resultBMI">
+<p id="message1" style="font-size : 17px; font-family : 'sans serif';"></p>	
+<button class="btnstyle" onclick="bmi1()" > <b>Calculate BMI</b></button>
+</div>	
+<div id="interept">
+<p id="message2" style="font-size : 17px; font-family : 'sans serif';"></p>
+<button class="btnstyle" onclick="resultInterp()" > <b>Result Interpretation</b></button>
+</div>
+</div>
+</main>
+<script>
+	$('.header').css({'padding':'15px','test-align':'right','color':'white','fontSize':'30px','border-radius':"15px","margin-left":"65px"})
+	$("#logoCalories").css({'width':'80px','border-radius':'10px'})
+	$('#logoname').css({"font-size": "40px","top":"-42px","color":"#383838"})
+	$('.navD').css({"color":"white","box-shadow":"0 2px 4px 0 rgba(0,0,0,0.1)"})
+	$("ul").css({'list-style-type':"none","margin":"0","padding":"0", "background-color":"#333", 'height':"50px"})
+	$("li").css({"float":"left"})
+	$("li a").css({"color":"white", "display":"block","text-align":"center", "padding":"14px 16px", "text-decoration":"none"})
+	$('main').css({'text-align':'center',"font-family":"Helvetica","background-image":"linear-gradient(#00b894,#18dcff)","padding":"80px","opacity":"0.92"})
+	$("#formula").css({'background-color':'#ffffff', "width":"400px","margin-left":"430px","border-radius":"7px","box-shadow":"2px 2px 2px #ee5253", "height":"530px", "padding": "20px"})
+	$("#title").css({"font-family":"sans serif","font-size":"30px"})
+	$(".desiBtn").css({"border":"none", "border-bottom" :"1px solid #ff7675", "width": "180px","outline":"none"})
+	$(".info").css({"font-family":"sans serif", "font-size":"17px","margin-right":"100px"})
+	$(".btnstyle").css({"border":"none", "background-color" :"#ff6b6b", "color":"white", "font-family":"sans serif", "width":"200px","height" : "50px", "border-radius" :"20px" })
+
+</script>
+<script type="text/javascript" src="BMI.js"></script>
+</body>
+</html>
